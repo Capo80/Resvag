@@ -1,0 +1,10 @@
+[Unit]
+Description=Simple systemd service for Ulixes.
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ec2-user/Ulixes
+ExecStart=/usr/bin/python3 /home/ec2-user/Ulixes/Ulixes.py
+
+[Install]
+WantedBy=multi-user.target
